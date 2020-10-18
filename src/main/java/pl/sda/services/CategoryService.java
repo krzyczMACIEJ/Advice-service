@@ -10,5 +10,6 @@ public interface CategoryService {
     boolean addCategory(Category category);
     Optional<Category> findCategoryByName(String categoryName);
     List<Category> chooseCategory(String categoryName);
+    List<Category> getAllCategories();
 
 }

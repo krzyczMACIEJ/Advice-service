@@ -5,6 +5,7 @@ import pl.sda.domain.Category;
 import pl.sda.domain.Question;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public interface QuestionService {
 
@@ -15,13 +16,6 @@ public interface QuestionService {
     boolean deleteQuestion(int id, LocalDateTime deleteDate);
     boolean editQuestion(int id, String content, LocalDateTime editDate);
     boolean canEditQuestion(Question question);
-
-
-
-
-
-
-
-
+    List<Question> getAllQuestions();
 
 }
